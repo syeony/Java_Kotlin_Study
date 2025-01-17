@@ -40,3 +40,14 @@ System.out.println(Math.min(-10, -11)); // -11​
 System.out.println((int)Math.pow(5, 2)); // 25
 System.out.println((int)Math.sqrt(25)); // 5
 ```
+
+# 무한루프
+```java
+while(true){
+
+}
+
+for(;true;){
+
+}
+```
