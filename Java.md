@@ -1,3 +1,18 @@
+# 연산자
+```java
+int i = 10/3;
+System.out.println(i); //3
+
+float f = 10/3;
+System.out.println(f); //3.0
+
+float f2 = 10f/3F;
+System.out.println(f2); //3.3333333
+
+double d = 10d/3D;
+System.out.println(d); //3.33333333335
+```
+
 # Math 메소드
 
 ```java
