@@ -1,3 +1,23 @@
+# 함수(method) 정의
+```java
+public static Main{
+    static int a; //전역변수 선언
+    static int b;
+
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        a = nextInt();
+        b = nextInt();
+        System.out.println(add(a,b));
+    }
+
+    public static int add(int a,int b){ //return 값이 int로 있을때 int add로...없으면 void
+        return a+b;
+    }
+
+}
+```
+
 # 배열 입력 받고 출력하기
 ```java
 //공백없는 일차원 배열 입력받고 출력하기
@@ -28,6 +48,11 @@ for(int i=0;i<n;i++){
 }
 
 System.out.println(Arrays.deepToString(arr));
+```
+# bfs 구현할때 큐
+```java
+Queue<int[]> q = new LinkedList<>(); //선언
+q.add(new int[]{x,y}); //큐에 x,y 넣을때
 ```
 
 # 연산자
@@ -78,8 +103,14 @@ System.out.println((int)Math.sqrt(25)); // 5
 while(true){
 
 }
-
+// 위랑 아래랑 같다
 for(;true;){
 
 }
+
+//번외 - 큐가 비어있지 않을 때까지 반복문
+while(!q.isEmpty()){
+
+}
+
 ```
