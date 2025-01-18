@@ -1,3 +1,35 @@
+# 배열 입력 받고 출력하기
+```java
+//공백없는 일차원 배열 입력받고 출력하기
+
+Scanner sc = new Scanner(System.in);
+int n = sc.nextInt();
+
+int[] arr = new int[n];
+String[] s = sc.next().split("");
+for(int i=0;i<n;i++){
+    arr[i] = Integer.parseInt(s[i]);
+}
+
+System.out.println(Arrays.toString(arr));
+
+//공백없는 이차원 배열 입력받고 출력하기
+
+Scanner sc = new Scanner(System.in);
+int n = sc.nextInt();
+int m = sc.nextInt();
+int[][] arr = new int[n][m];
+
+for(int i=0;i<n;i++){
+    String[] s = sc.next().split("");
+    for(int j = 0; j<m;j++){
+        arr[i][j] = Integer.parseInt(s[j]);
+    }
+}
+
+System.out.println(Arrays.deepToString(arr));
+```
+
 # 연산자
 ```java
 int i = 10/3;
