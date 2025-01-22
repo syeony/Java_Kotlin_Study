@@ -20,12 +20,12 @@ public static Main{
 
 # 배열 입력 받고 출력하기
 ```java
-//공백없는 일차원 배열 입력받고 출력하기
+//공백없는 int 일차원 배열 입력받고 출력하기
 
 Scanner sc = new Scanner(System.in);
 int n = sc.nextInt();
-
 int[] arr = new int[n];
+
 String[] s = sc.next().split("");
 for(int i=0;i<n;i++){
     arr[i] = Integer.parseInt(s[i]);
@@ -33,7 +33,7 @@ for(int i=0;i<n;i++){
 
 System.out.println(Arrays.toString(arr));
 
-//공백없는 이차원 배열 입력받고 출력하기
+//공백없는 int 이차원 배열 입력받고 출력하기
 
 Scanner sc = new Scanner(System.in);
 int n = sc.nextInt();
@@ -48,6 +48,19 @@ for(int i=0;i<n;i++){
 }
 
 System.out.println(Arrays.deepToString(arr));
+
+//공백있는 char 이차원 배열 입력받기
+
+int n = sc.nextInt();
+
+char[][] arr = new char[n][n];
+
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+        arr[i][j] = sc.next().charAt(0);
+    }
+}
+
 ```
 # bfs 구현할때 큐
 ```java
