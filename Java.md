@@ -20,6 +20,12 @@ public static Main{
 
 # 배열 입력 받고 출력하기
 ```java
+//빠른 입력(알고리즘 풀이때 많이들 씀)
+
+BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+String s = read.readLine();
+System.out.println(s);
+
 //공백없는 int 일차원 배열 입력받고 출력하기
 
 Scanner sc = new Scanner(System.in);
