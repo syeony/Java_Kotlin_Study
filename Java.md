@@ -1,4 +1,4 @@
-# 함수(method) 정의
+# 함수(method) 사용법
 ```java
 public static Main{
     static int a; //전역변수 선언
@@ -18,14 +18,34 @@ public static Main{
 }
 ```
 
-# 배열 입력 받고 출력하기
+# 배열 입력 BufferdReader
 ```java
 //빠른 입력(알고리즘 풀이때 많이들 씀)
 
-BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
-String s = read.readLine();
-System.out.println(s);
+import java.io.*;
 
+public class baekjoon_1267 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        int n = Integer.parseInt(br.readLine()); // 정수 하나 입력
+
+        String s = read.readLine(); // 문자열 입력
+
+        // 정수 공백 기준으로 배열에 입력
+        int[] nums = new int[5];
+        StringTokenizer st = new StringTokenizer(bf.readLine());
+        for(int i = 0; i < 5; i++)
+            nums[i] = Integer.parseInt(st.nextToken());
+
+        //
+        String[] words = new String[5];
+        for(int i = 0; i < 5; i++)
+            words[i] = bf.readLine();
+```
+
+# 배열 입력 Scanner
+```java
 //공백없는 int 일차원 배열 입력받고 출력하기
 
 Scanner sc = new Scanner(System.in);
