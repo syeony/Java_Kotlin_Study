@@ -23,6 +23,7 @@ public static Main{
 //빠른 입력(알고리즘 풀이때 많이들 씀)
 
 import java.io.*;
+import java.util.*; // StringTokenizer
 
 public class baekjoon_1267 {
     public static void main(String[] args) throws IOException {
@@ -32,16 +33,27 @@ public class baekjoon_1267 {
 
         String s = read.readLine(); // 문자열 입력
 
+        // 정수 공백 기준으로 n,m 변수에 입력
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n = Integer.parseInt(st.nextToken());
+        int m = Integer.parseInt(st.nextToken());
+
+        // 문자열 형태로 받아서 잘라서 넣어도 됨
+        String s = br.readLine();
+        String [] arr = s.split(" ");
+        int m = Integer.parseInt(arr[0]);
+        int n = Integer.parseInt(arr[1]);
+
         // 정수 공백 기준으로 배열에 입력
         int[] nums = new int[5];
-        StringTokenizer st = new StringTokenizer(bf.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine());
         for(int i = 0; i < 5; i++)
             nums[i] = Integer.parseInt(st.nextToken());
 
-        //
+        // 문자열 엔터 기준 배열에 입력
         String[] words = new String[5];
         for(int i = 0; i < 5; i++)
-            words[i] = bf.readLine();
+            words[i] = br.readLine();
 ```
 
 # 배열 입력 Scanner
