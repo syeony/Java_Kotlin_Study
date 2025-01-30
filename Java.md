@@ -31,7 +31,7 @@ public class baekjoon_1267 {
 
         int n = Integer.parseInt(br.readLine()); // 정수 하나 입력
 
-        String s = read.readLine(); // 문자열 입력
+        String s = br.readLine(); // 문자열 입력
 
         // 정수 공백 기준으로 n,m 변수에 입력
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -54,6 +54,12 @@ public class baekjoon_1267 {
         String[] words = new String[5];
         for(int i = 0; i < 5; i++)
             words[i] = br.readLine();
+```
+
+# AllayList
+```java
+ArrayList<String> l = new ArrayList<>();
+l.size() // l.length 가 아님!
 ```
 
 # 배열 입력 Scanner
@@ -100,6 +106,13 @@ for (int i = 0; i < n; i++) {
 }
 
 ```
+
+# String 비교
+```java
+str.equals("*")
+// char 비교시엔 ==써도 되지만 string비교시엔 무조건 equals사용해야한다!
+```
+
 # bfs 구현할때 큐
 ```java
 Queue<int[]> q = new LinkedList<>(); //선언
