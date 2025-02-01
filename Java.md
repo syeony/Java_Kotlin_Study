@@ -21,8 +21,13 @@ public static Main{
 ```java
 String st = "hello";
 st.length(); //문자열 길이
+
 StringBuffer st2 = new StringBuffer(st);
 st2.reverse().toString(); //문자열 거꾸로 만들기
+
+// 문자열 배열에 집어넣기
+String str = br.readLine();
+String[] arr = str.split("");
 ```
 
 # 배열 입력 BufferdReader
