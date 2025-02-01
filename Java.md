@@ -17,6 +17,13 @@ public static Main{
 
 }
 ```
+# 문자열 기본 함수
+```java
+String st = "hello";
+st.length(); //문자열 길이
+StringBuffer st2 = new StringBuffer(st);
+st2.reverse().toString(); //문자열 거꾸로 만들기
+```
 
 # 배열 입력 BufferdReader
 ```java
