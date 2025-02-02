@@ -32,6 +32,24 @@ st2.reverse().toString(); //문자열 거꾸로 만들기
 // 문자열 배열에 집어넣기
 String str = br.readLine();
 String[] arr = str.split("");
+
+// 문자열 중복제거
+for(int i =0; i<str.length(); i++) {
+	if(str.indexOf(str.charAt(i))==i) answer +=str.charAt(i);
+}
+
+// sort함수 응용
+Arrays.sort(arr, new Comparator<String>(){
+    @Override
+    public int compare(String o1, String o2) {
+        if(o1.length()==o2.length()){ //길이같으면
+            return o1.compareTo(o2); //알파벳순정렬
+        }
+        else{
+            return o1.length() - o2.length(); //길이 짧은순 정렬
+        }
+    }
+});
 ```
 
 # 배열 입력 BufferdReader
