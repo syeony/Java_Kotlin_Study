@@ -67,6 +67,14 @@ public class baekjoon_1267 {
 
         String s = br.readLine(); // 문자열 입력
 
+	// 입력받은 정수 배열에 하나씩 넣기
+	String n = br.readLine();
+        int[] arr = new int[n.length()];
+
+        for(int i=0;i<n.length();i++){
+            arr[i] = n.charAt(i) - '0';
+        }
+
         // 정수 공백 기준으로 n,m 변수에 입력
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
