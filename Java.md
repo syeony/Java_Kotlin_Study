@@ -65,7 +65,7 @@ public class baekjoon_1267 {
 
         int n = Integer.parseInt(br.readLine()); // 정수 하나 입력
 
-        String s = br.readLine(); // 문자열 입력
+        String s = br.readLine(); // 문자열 입력
 
 	// 입력받은 정수 배열에 하나씩 넣기
 	String n = br.readLine();
